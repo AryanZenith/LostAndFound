@@ -27,7 +27,7 @@ export default function LostForm() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:5000/api/lost/add", {
+      const res = await fetch("https://lostandfound-psrf.onrender.com/api/lost/add", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

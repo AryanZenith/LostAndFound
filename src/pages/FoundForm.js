@@ -30,7 +30,7 @@ export default function FoundForm() {
   try {
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:5000/api/found/add", {
+    const res = await fetch("https://lostandfound-psrf.onrender.com/api/found/add", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

@@ -24,7 +24,7 @@ const loggedUserId = getUserIdFromToken(token);
 
   useEffect(() => {
     
-    fetch(`http://localhost:5000/api/${type}`)
+    fetch(`https://lostandfound-psrf.onrender.com/api/${type}`)
       .then(res => res.json())
       .then(data => {
         const found = data.find(i => i._id === id);
@@ -46,7 +46,7 @@ const handleDelete = async () => {
   if(!window.confirm("Are you sure you got your item?")) return;
 
   try{
-    const res = await fetch(`http://localhost:5000/api/${type}/${id}`,{
+    const res = await fetch(`https://lostandfound-psrf.onrender.com/api/${type}/${id}`,{
       method:"DELETE",
       headers:{
         Authorization:`Bearer ${token}`

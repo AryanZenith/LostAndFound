@@ -10,7 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     // FETCH FOUND ITEMS
-    fetch("http://localhost:5000/api/found")
+    fetch("https://lostandfound-psrf.onrender.com/api/found")
       .then(async (res) => {
         if (!res.ok) {
           const text = await res.text();
@@ -28,7 +28,7 @@ export default function Home() {
       });
 
     // FETCH LOST ITEMS 
-    fetch("http://localhost:5000/api/lost")
+    fetch("https://lostandfound-psrf.onrender.com/api/lost")
       .then(async (res) => {
         if (!res.ok) return [];
         return res.json();
