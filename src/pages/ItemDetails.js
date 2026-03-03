@@ -76,7 +76,7 @@ const handleDelete = async () => {
         {/* Image */}
         <div className="overflow-hidden">
           <img
-            src={`http://localhost:5000/uploads/${item.image}`}
+            src={`https://lostandfound-psrf.onrender.com/uploads/${item.image}`}
             alt={item.item}
            className="w-full max-h-[600px] object-contain bg-black"
 
