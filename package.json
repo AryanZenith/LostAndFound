@@ -6,8 +6,8 @@
   "author": "",
   "type": "commonjs",
  "scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html"
+  "start": "parcel public/index.html",
+  "build": "parcel build public/index.html"
 },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
