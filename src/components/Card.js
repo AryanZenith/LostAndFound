@@ -2,7 +2,7 @@ export default function Card({ item, type }) {
   const imageUrl = item?.image
     ? item.image.startsWith("http")
       ? item.image
-      : `http://localhost:5000/uploads/${item.image}`
+      : `https://lostandfound-psrf.onrender.com/${item.image}`
     : "/dummy.png";
 
   return (

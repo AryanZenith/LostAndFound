@@ -16,7 +16,7 @@ export default function CardSection({ title, items, type }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {items.map((item) => {
           const imageUrl = item.image
-            ? `http://localhost:5000/uploads/${item.image}`
+            ? `https://lostandfound-psrf.onrender.com/uploads/${item.image}`
             : "/dummy.png";
 
           return (
