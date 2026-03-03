@@ -5,9 +5,10 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "parcel index.html",
+  "build": "parcel build index.html"
+},
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.18",
     "cors": "^2.8.6",
